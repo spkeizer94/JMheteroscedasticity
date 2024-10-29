@@ -76,7 +76,7 @@ run;
 /************************/;
 data longitudinal;
 set longitudinal;
-where sim>=&startsim and sim<=&endsim;
+where sim>=&startsim and sim<=&endsim; *to limit size of datasets that over which te integral gets calculated. (large datasets take a lot of space);
 m_log_u = -log(u);
 run;
 proc iml;
