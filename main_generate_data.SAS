@@ -6,7 +6,7 @@ Libname SAS 'C:\Users\s130398\JM\MixedJump\data';
 %simHetJM(nsim = 100, n = 100, t =30, ve = 2, u0 = 12, u1 = 0, u2 =-0.3, u3 = 0,
 		   alpha0 = -3, alpha1 = 0.05, gamma = 0.5, s0 = 0.05, s1 = 0.2, shape =1.5, scale =150,
 		   v00 = 4, v11 = 0.005, v22 = 1, v33 = 0.015, v44 = 0.3, cov01 = -0.02, cov02 = -0.2, cov03 = -0.05, cov04=0.6,
-		   cov12 = -0.015, cov13 = 0.005, cov14=0.01, cov23 = -0.02, cov24=-0.1, cov34=-0.025);
+		   cov12 = -0.015, cov13 = 0.005, cov14=0.01, cov23 = -0.02, cov24=-0.1, cov34=-0.025, startsim=0,endsim=100);
 
 proc export data=work.Simdata
 outfile='...\simulated_data.csv'
